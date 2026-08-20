@@ -1,0 +1,32 @@
+# ─── Medical data — never commit ───────────────────────────────
+# The evaluation corpus is real prescriptions from real people.
+# De-identified or not, it does not belong in a public repo.
+/corpus/
+/prescriptions/
+/reports/
+/eval-data/
+/test-images/
+*.identified.*
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies / build
+node_modules/
+dist/
+build/
+.next/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local
+.DS_Store
+Thumbs.db
+.idea/
+*.log
